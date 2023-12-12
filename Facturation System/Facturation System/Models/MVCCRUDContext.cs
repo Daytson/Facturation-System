@@ -70,7 +70,7 @@ namespace Facturation_System.Models
 
             modelBuilder.Entity<Dfactura>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Secuencia);
 
                 entity.ToTable("DFACTURA");
 
@@ -101,11 +101,15 @@ namespace Facturation_System.Models
                 entity.Property(e => e.Secuencia)
                     .ValueGeneratedOnAdd()
                     .HasColumnName("SECUENCIA");
+
+                entity.HasOne(d => d.Productos)
+                .WithMany(p => p.Dfacturas)
+                .HasForeignKey(d => d.Articulo);
             });
 
             modelBuilder.Entity<Hfactura>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Factura);
 
                 entity.ToTable("HFACTURA");
 
@@ -126,11 +130,15 @@ namespace Facturation_System.Models
                 entity.Property(e => e.Montofacturado).HasColumnName("MONTOFACTURADO");
 
                 entity.Property(e => e.Subtotal).HasColumnName("SUBTOTAL");
+
+                entity.HasOne(h => h.CLIENTE_OBJ)
+                .WithMany(c => c.Hfacturas)
+                .HasForeignKey(h => h.Cliente);
             });
 
             modelBuilder.Entity<Producto>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.Item);
 
                 entity.ToTable("PRODUCTOS");
 
@@ -143,6 +151,10 @@ namespace Facturation_System.Models
                 entity.Property(e => e.Item).HasMaxLength(10);
 
                 entity.Property(e => e.Ruta).HasColumnType("text");
+
+                entity.HasMany(p => p.Dfacturas)
+                .WithOne(d => d.Productos)
+                .HasForeignKey(d => d.Articulo);
             });
 
             OnModelCreatingPartial(modelBuilder);
