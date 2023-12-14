@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dayts\\OneDrive\\Desktop\\PF3\\Facturation System\\Facturation System\\Facturation System.csproj": {}
+    "C:\\Users\\dayts\\OneDrive\\Desktop\\PPF3\\Facturation System\\Facturation System\\Facturation System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dayts\\OneDrive\\Desktop\\PF3\\Facturation System\\Facturation System\\Facturation System.csproj": {
+    "C:\\Users\\dayts\\OneDrive\\Desktop\\PPF3\\Facturation System\\Facturation System\\Facturation System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayts\\OneDrive\\Desktop\\PF3\\Facturation System\\Facturation System\\Facturation System.csproj",
+        "projectUniqueName": "C:\\Users\\dayts\\OneDrive\\Desktop\\PPF3\\Facturation System\\Facturation System\\Facturation System.csproj",
         "projectName": "Facturation System",
-        "projectPath": "C:\\Users\\dayts\\OneDrive\\Desktop\\PF3\\Facturation System\\Facturation System\\Facturation System.csproj",
+        "projectPath": "C:\\Users\\dayts\\OneDrive\\Desktop\\PPF3\\Facturation System\\Facturation System\\Facturation System.csproj",
         "packagesPath": "C:\\Users\\dayts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayts\\OneDrive\\Desktop\\PF3\\Facturation System\\Facturation System\\obj\\",
+        "outputPath": "C:\\Users\\dayts\\OneDrive\\Desktop\\PPF3\\Facturation System\\Facturation System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dayts\\AppData\\Roaming\\NuGet\\NuGet.Config",
